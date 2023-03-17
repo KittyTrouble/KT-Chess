@@ -2,39 +2,99 @@
 <head>
 	<title>Upcoming Tournaments - KT Chess</title>
 	<style>
+		body {
+			background-color: #f7f7f7;
+		}
+		header {
+			background-color: #263238;
+			color: #fff;
+			padding: 20px;
+			margin-bottom: 30px;
+		}
+		header h1 {
+			font-size: 36px;
+			margin: 0;
+		}
+		header p {
+			font-size: 18px;
+			margin: 10px 0 0;
+			line-height: 1.5;
+		}
+		header a {
+			color: #fff;
+			text-decoration: underline;
+		}
+		main {
+			max-width: 900px;
+			margin: 0 auto;
+		}
 		.container {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 			align-items: center;
+			margin-bottom: 30px;
 		}
 		.box {
 			width: 300px;
 			height: 300px;
 			margin: 10px;
 			padding: 20px;
-			background-color: #f2f2f2;
+			background-color: #fff;
 			box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
 			text-align: center;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			transition: all 0.3s ease-in-out;
+		}
+		.box:hover {
+			transform: scale(1.05);
+			box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
 		}
 		.box h3 {
 			font-size: 24px;
 			margin: 0 0 10px;
+			color: #263238;
 		}
 		.box p {
 			font-size: 18px;
 			margin: 0;
+			color: #546e7a;
+			line-height: 1.5;
+		}
+		.box p:first-child {
+			margin-top: 10px;
+		}
+		.box p:last-child {
+			margin-bottom: 10px;
+		}
+		.box p:last-child::before {
+			content: "• ";
+		}
+		.box p:last-child::first-letter {
+			text-transform: uppercase;
+		}
+		.contact {
+			text-align: center;
+			margin-top: 30px;
+		}
+		.contact p {
+			font-size: 18px;
+			margin: 0;
+			line-height: 1.5;
+		}
+		.contact a {
+			color: #263238;
+			text-decoration: underline;
 		}
 	</style>
 </head>
 <body>
 	<header>
 		<h1>Welcome To KT Chess</h1>
-		<p>We host USCF-rated chess tournaments at Meadowlark Coffee & Espresso on Saturdays from 3-7 PM. Registrations start at 2 PM and are limited to 12 people. Optional $1 to cover club costs is appreciated, but not required. You must be a <a href="https://new.uschess.org/">US Chess member</a> or sign up at the event (see their website for prices).</p>
+		<p>We host USCF-rated chess tournaments at Meadowlark Coffee & Espresso on some Saturdays from 3-7 PM, in collaboration with Meadowlark Chess Club. Registrations start at 2 PM and are limited to 12 people. Optional $1 to cover club costs is appreciated, but not required. You must be a <a href="https://new.uschess.org/">US Chess member</a> or sign up at the event (see their website for prices).</p>
 		<p>We also host daily USCF-rated chess tournaments at <a href="https://www.chess.com/club/kt-chess-uscf-tounaments">our chess.com club</a>.</p>
 	</header>
 	<main>
@@ -58,5 +118,5 @@
 		</div>
 		<p style="font-size: 1.5em;">Questions? Contact Kara Kalinowski at <a href="mailto:kara@karakalinowski.com">kara@karakalinowski.com</a></p>
 	</main>
-</body>
+  </body>
 </html>
